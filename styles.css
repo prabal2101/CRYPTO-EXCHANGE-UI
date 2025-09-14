@@ -136,11 +136,13 @@ nav .btn {
   }
 
   /* Hide nav links initially */
-  nav ul {
+   /* Hide nav links initially */
+  #nav-links {
     position: absolute;
     top: 70px; /* just below navbar */
     left: 0;
     width: 100%;
+    display: flex;
     flex-direction: column;
     background: rgba(0,0,0,0.9);
     overflow: hidden;
@@ -150,9 +152,10 @@ nav .btn {
     margin-top: 10px;
   }
 
-  nav ul.active {
+  #nav-links.active {
     max-height: 300px; /* expands smoothly */
   }
+
 
   nav ul li {
     display: block;
@@ -184,3 +187,4 @@ nav .btn {
     margin: 10px 0;
   }
 }
+
