@@ -123,7 +123,7 @@ nav .btn {
   color: #fff;
 }
 
-/* --- Responsive Design --- */
+/* Mobile view */
 @media (max-width: 600px) {
   nav {
     flex-wrap: wrap;
@@ -138,14 +138,14 @@ nav .btn {
   /* Hide nav links initially */
   nav ul {
     position: absolute;
-    top: 70px;
+    top: 70px; /* just below navbar */
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0,0,0,0.9);
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    max-height: 0;  /* hidden */
+    transition: max-height 0.3s ease-in-out; /* smooth slide */
     text-align: center;
     margin-top: 10px;
   }
@@ -161,11 +161,11 @@ nav .btn {
 
   .content {
     margin-top: 20%;
-    text-align: center; 
+    text-align: center; /* only mobile centered */
   }
 
   .content h1 {
-    font-size: 40px;
+    font-size: 40px; /* smaller so it fits */
   }
 
   .content p {
@@ -173,7 +173,7 @@ nav .btn {
   }
 
   .coin-list {
-    position: static;
+    position: static; /* no absolute overlap */
     flex-direction: column;
     margin-top: 30px;
   }
