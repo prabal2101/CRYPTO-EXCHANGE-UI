@@ -128,18 +128,13 @@ nav .btn {
   margin-top: 5px;
 }
 
-/* Hamburger menu icon */
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #fff;
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
 
-.menu-icon:hover {
-  transform: scale(1.1);
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
 }
 
 /* Keyframe animations */
@@ -151,10 +146,29 @@ nav .btn {
 }
 
 /* Mobile Styles */
+/* Mobile Menu - Section-like Links */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 5%;
+  nav ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 80%;
+    text-align: center;
+    padding: 15px 0;
   }
+
+  nav ul li a {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    color: #ff960b;
+    transition: color 0.3s ease;
+  }
+}
+
   
   /* Mobile Navigation */
   .menu-icon {
